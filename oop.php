@@ -52,11 +52,16 @@ private $name;
  // TODO: Add getName method
  
  // TODO: Add borrowBook method
- 
+ public function borrowBook($book){
+
+ }
 
 
 
  // TODO: Add returnBook method
+ public function returnBook($book){
+    
+ }
  
 }
 
