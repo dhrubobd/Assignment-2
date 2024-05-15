@@ -14,11 +14,6 @@ class Book {
 public function getTitle(){
     return $this->title;
 }
-
- 
-
-
-
  // TODO: Add getAvailableCopies method
  public function getAvailableCopies(){
     return $this->availableCopies;
@@ -60,14 +55,14 @@ private $name;
  
  // TODO: Add borrowBook method
  public function borrowBook($book){
-
+    $book->borrowBook();
  }
 
 
 
  // TODO: Add returnBook method
  public function returnBook($book){
-
+    $book->returnBook();
  }
  
 }
@@ -99,10 +94,13 @@ $member2 = new Member("Jane Smith");
 
 
 // TODO: Apply Borrow book method to each member
-
+$member1->borrowBook($book1);
+$member2->borrowBook($book2);
 
 
 // TODO: Print Available Copies with their names:
+echo "Book Name: ".$book1->getTitle().", Available Copy: ".$book1->getAvailableCopies().PHP_EOL;
+echo "Book Name: ".$book2->getTitle().", Available Copy:  ".$book2->getAvailableCopies().PHP_EOL;
 
 
 ?>
