@@ -99,8 +99,8 @@ $member2->borrowBook($book2);
 
 
 // TODO: Print Available Copies with their names:
-echo "Book Name: ".$book1->getTitle().", Available Copy: ".$book1->getAvailableCopies().PHP_EOL;
-echo "Book Name: ".$book2->getTitle().", Available Copy:  ".$book2->getAvailableCopies().PHP_EOL;
+echo "Available Copies of '".$book1->getTitle()."': ".$book1->getAvailableCopies().PHP_EOL;
+echo "Available Copies of '".$book2->getTitle()."': ".$book2->getAvailableCopies().PHP_EOL;
 
 
 ?>
