@@ -1,9 +1,12 @@
 <?php
 class Book {
  // TODO: Add properties as Private
+ private $title, $availableCopies;
  
  public function __construct($title, $availableCopies) {
      // TODO: Initialize properties
+        $this->title = $title;
+        $this->availableCopies = $availableCopies;
      }
 
 
@@ -20,22 +23,28 @@ class Book {
 
 
  // TODO: Add borrowBook method
+     public function borrowBook(){
+        $this->availableCopies-=1;
+     }
  
 
 
 
  // TODO: Add returnBook method
- 
+     public function returnBook(){
+        $this->availableCopies+=1;
+     }
 }
 
 
 class Member {
  // TODO: Add properties as Private
-
+private $name;
 
 
  public function __construct($name) {
       // TODO: Initialize properties
+      $this->name = $name;
      }
 
 
@@ -60,14 +69,14 @@ class Member {
 
 
 // TODO: Create 2 books with the following properties
-Book 1 - Name: The Great Gatsby, Available Copies: 5.
-Book 2 - Name: To Kill a Mockingbird, Available Copies: 3.
+//Book 1 - Name: The Great Gatsby, Available Copies: 5.
+//Book 2 - Name: To Kill a Mockingbird, Available Copies: 3.
 
 
 
 // TODO: Create 2 members with the following properties
-Member 1 - Name: John Doe
-Member 2 - Name: Jane Smith
+//Member 1 - Name: John Doe
+//Member 2 - Name: Jane Smith
 
 
 
