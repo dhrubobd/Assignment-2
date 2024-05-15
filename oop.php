@@ -54,6 +54,9 @@ private $name;
 
 
  // TODO: Add getName method
+ public function getName(){
+    return $this->name;
+ }
  
  // TODO: Add borrowBook method
  public function borrowBook($book){
@@ -79,7 +82,11 @@ private $name;
 
 // TODO: Create 2 books with the following properties
 //Book 1 - Name: The Great Gatsby, Available Copies: 5.
+$book1 = new Book("The Great Gatsby",5);
 //Book 2 - Name: To Kill a Mockingbird, Available Copies: 3.
+$book2 = new Book("To Kill a Mockingbird",3);
+
+
 
 
 
