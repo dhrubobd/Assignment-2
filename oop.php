@@ -11,14 +11,18 @@ class Book {
 
 
 // TODO: Add getTitle method
-
+public function getTitle(){
+    return $this->title;
+}
 
  
 
 
 
  // TODO: Add getAvailableCopies method
- 
+ public function getAvailableCopies(){
+    return $this->availableCopies;
+ }
 
 
 
@@ -60,7 +64,7 @@ private $name;
 
  // TODO: Add returnBook method
  public function returnBook($book){
-    
+
  }
  
 }
