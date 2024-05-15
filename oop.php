@@ -92,7 +92,9 @@ $book2 = new Book("To Kill a Mockingbird",3);
 
 // TODO: Create 2 members with the following properties
 //Member 1 - Name: John Doe
+$member1 = new Member("John Doe");
 //Member 2 - Name: Jane Smith
+$member2 = new Member("Jane Smith");
 
 
 
